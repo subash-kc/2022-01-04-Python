@@ -32,19 +32,22 @@ WindSpeed Challenge Exercise
 """
 windspeed = int(input("Enter the Windspeeds in Km/hr: \n"))
 
+
+
 def speed(windspeed):
-    if windspeed>= 252:
-        return "Five"
-    elif windspeed>=209 and windspeed < 252:
-        return "Four"
-    elif windspeed>=178 and windspeed < 208:
-        return "Three"
-    elif windspeed>=154 and windspeed < 177:
-        return "Two"
-    elif windspeed>=119 and windspeed< 154:
-        return "One"
+    if 119>=windspeed:
+        print("Invalid input")
     else:
-        print("Invalid Input")
+        if windspeed>= 252:
+            return "Five"
+        elif windspeed>=209 and windspeed < 252:
+            return "Four"
+        elif windspeed>=178 and windspeed < 208:
+            return "Three"
+        elif windspeed>=154 and windspeed < 177:
+            return "Two"
+        elif windspeed>=119 and windspeed< 154:
+            return "One"
 
 print("WindSpeed Category is: ", speed(windspeed))
 
