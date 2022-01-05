@@ -16,12 +16,12 @@ Display the value mapped to startDate
 Add a new key, episodes mapped to the value of 70
 
 """
-print(munsters["names"])
+print("Names: ", munsters["names"])
 
-print(munsters["endDate"])
+print("EndDate: ", munsters["endDate"])
 
-print(munsters["startDate"])
+print("StartDate: ", munsters["startDate"])
 
 munsters["episodes"] = 70;
 
-print(munsters)
+print("All Keys and Values in Musters", munsters)
