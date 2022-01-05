@@ -1,4 +1,7 @@
-
+"""
+If/Else challenge exercise
+School Person Grade
+"""
 score = float(input("Enter the Score: \n"))
 
 
@@ -24,8 +27,8 @@ else:
 ## Slaffir-Simpson WindSpeed
 
 """
-If/Else challenge exercise
-School Person Grade
+WindSpeed Challenge Exercise
+
 """
 windspeed = int(input("Enter the Windspeeds in Km/hr: \n"))
 
