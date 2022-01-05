@@ -22,6 +22,23 @@ print("EndDate: ", munsters["endDate"])
 
 print("StartDate: ", munsters["startDate"])
 
-munsters["episodes"] = 70;
+munsters["episodes"] = 70
 
 print("All Keys and Values in Musters", munsters)
+
+def main():
+        #Display the names
+        print(munsters.get("names"))
+
+        #Display the startdate
+        print(munsters.get("endDate"))
+
+        #Display the endDate
+        print(munsters.get("startDate"))
+
+        #Add key
+        munsters["episodes"] = 70
+
+        print(munsters.get("episodes"))
+
+main()
