@@ -22,4 +22,9 @@ for fruit in fruitbowl:
     print(fruit, end=" " )
 print()
 
+foo = open("ourfile.txt", "w")
 
+for fruit in fruitbowl:
+    print(fruit, file=foo)
+
+foo.close()
