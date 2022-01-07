@@ -16,5 +16,9 @@ for i in netifaces.interfaces():
     except:
         print('Could not collect adapter information') # Print an error message
 
+def extract_ip(ifname):
+
+    print(( netifaces.ifaddresses(ifname)[netifaces.AF_LINK]
+
 
 
