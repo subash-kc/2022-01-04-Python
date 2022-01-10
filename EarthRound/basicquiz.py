@@ -5,7 +5,7 @@ Defining all the necessary to function
 new game function to start the game
 """
 
-
+#this function clear the screen to the lines that got input
 def clear_screen(lines):
     for l in range(lines):
         print()
@@ -18,9 +18,7 @@ def new_game():
     question_number = 1  # represent the first question
 
     # We need to display all the questions in our dictionary of questions
-    clear_screen(20)
     for key in questions:
-        clear_screen(35)
         print()
         print(key)
 
