@@ -1,0 +1,30 @@
+rooms = {
+
+            'Hall' : {
+                  'south' : 'Kitchen',
+                    'east' : 'Dining Room',
+                    'item' : 'key',
+                    'down' : 'Basement'
+                },
+
+            'Kitchen' : {
+                  'north' : 'Hall',
+                'item' : 'monster',
+                },
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden',
+                'item' : 'potion'
+            },
+
+            'Basement' : {
+                'up' : 'Hall',
+                'item' : 'alligator'
+            },
+
+            'Garden' : {
+                'north' : 'Dining Room'
+            }
+
+
+         }

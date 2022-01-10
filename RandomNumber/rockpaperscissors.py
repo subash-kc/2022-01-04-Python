@@ -51,7 +51,7 @@ while True:
     play_again = input("Do you want to play Again? (yes/no): ").lower()
 
     if play_again != "yes":
-        break
+            break
 print("Game Over!!")
 
 
