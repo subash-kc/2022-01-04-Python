@@ -17,7 +17,7 @@ def showInstructions():
     ''')
     print("To win the game one must need to escape from Hunted House.")
     time.sleep(3)
-    print("You also must need to get key and potion to escape from the house")
+    print("You also must need to get your family, get key, get wallet and get weapon to escape from the house")
     time.sleep(3)
 
 def showStatus():
