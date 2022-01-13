@@ -1,4 +1,4 @@
-import time, os
+import time
 from copy import deepcopy
 from ColorIt import *
 from quiz import quiz, question_answers
@@ -54,10 +54,14 @@ def showInstructions():
 
     if get_answer == "Yes".lower():
         showStatus()
-    else:
+    elif get_answer == "No".lower():
         print('')
         print("Thank you for choosing Home Escape Game Mission!!!!!")
         exit()
+    else:
+        print("Invalid Command!!!!")
+
+
 
 # def clear():
 #     os.system('cls')
@@ -274,5 +278,4 @@ def play_again():
                 return play()
             else:
                 return
-
 play()
