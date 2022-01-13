@@ -93,17 +93,24 @@ while True:
 
     answer = input("You are in the Office Room, the game is on. You seee bunch of bad Zombies coming to your way. What way would you like to go? ").lower()
 
-    if answer[0] == "go":
-        if answer[1] in rooms[currentRoom]:
-            currentRoom = rooms[currentRoom][answer[1]]
+    if answer == "go":
+        direction = rooms[currentRoom]
+        print(direction)
+        direction = input("Please enter the direction you will like for your next move ").lower()
+        if direction in rooms[currentRoom]:
+            currentRoom = rooms[currentRoom][direction]
         else:
             print("You can't go that way!!!")
 
-    if answer[0] == "get":
-        if "item" in rooms[currentRoom] and answer[1] in rooms[currentRoom]["item"]:
-            inventory += [answer[1]]
-        # there is no door link to the direction you input
-            print(answer[1] + "Received!")
-
+    if answer == "get":
+        item = rooms[currentRoom]['item']
+        if "item" in inventory:
+            print("You have already taken that item ")
         else:
-            print("You can't go that way!!!!")
+            if 'item' in rooms[currentRoom]:
+                item = rooms[currentRoom]['item']
+                inventory.append(item)
+
+                print(item + "Received!!!!")
+    else:
+        print("You can't go that way")
