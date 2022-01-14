@@ -1,5 +1,8 @@
 from builtins import print
 
+# A cross-platform lightweight package for printing colors in the terminal.
+# A simple library to add color to your output.
+
 colors = {
     'red'    : (245, 90 , 66 ),
     'yellow' : (245, 252, 71 ),
